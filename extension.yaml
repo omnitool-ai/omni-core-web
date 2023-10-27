@@ -1,0 +1,8 @@
+title: Omnitool Web Interface
+version: 0.0.1
+description: Web interface of Omnitool
+author: Omnitool.ai team
+origin: https://github.com/omnitool-ai/omni-core-web.git
+client:
+  addToWorkbench: false
+  singleton: true
