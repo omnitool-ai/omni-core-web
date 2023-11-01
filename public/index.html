@@ -11,9 +11,9 @@
         display: none !important;
       }
     </style>
-    <script type="module" crossorigin src="/assets/main-66cdd987.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/Login-291ad016.js">
-    <link rel="stylesheet" href="/assets/Login-470a6a23.css">
+    <script type="module" crossorigin src="/assets/main-6c7c42d2.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/Login-8c804137.js">
+    <link rel="stylesheet" href="/assets/Login-88e1afa6.css">
     <link rel="stylesheet" href="/assets/index-9e528d53.css">
   </head>
 
@@ -267,9 +267,13 @@
               </svg>
             </a>
           </div>
-          <div class='-rotate-90 origin-left whitespace-nowrap fixed left-5 bottom-20 items-center'>
-            <span class="text-2xl text-gray-400">OMNITOOL</span>
-            <span class="text-md text-gray-300">&nbsp;0.5.0 (Early Access)</span>
+          <div class='-rotate-90 origin-left whitespace-nowrap fixed left-5 bottom-20 items-center' 
+            x-data="{version: ''}"
+            x-init="version = await (await fetch('/version')).text()"
+          >
+            <span class="text-2xl text-gray-400">OMNITOOL&nbsp;</span>
+            <span class="text-md text-gray-300" x-text="version"></span>
+            <span class="text-md text-gray-300">&nbsp;(EARLY ACCESS)</span>
           </div>
         
         </div>        <div
