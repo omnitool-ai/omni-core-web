@@ -11,9 +11,9 @@
         display: none !important;
       }
     </style>
-    <script type="module" crossorigin src="/assets/main-VjygCOSg.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/Login-nPSyZeSz.js">
-    <link rel="stylesheet" crossorigin href="/assets/Login-F4nCZr0M.css">
+    <script type="module" crossorigin src="/assets/main-lxc5nS3j.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/Login-5rhQe56g.js">
+    <link rel="stylesheet" crossorigin href="/assets/Login-Zsrle8HR.css">
     <link rel="stylesheet" crossorigin href="/assets/main-0Th-co0X.css">
   </head>
 
@@ -224,6 +224,12 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" width="37" height="22" viewBox="0 0 37 22" fill="none">
         <path d="M25.5 19L35.5 11L25.5 3M11 3L1 11L11 19M21 1L15 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
+            </button>
+          </div>
+          <div class="sidebarItem" x-tooltip="Local APIs" @click="window.client.runScript('local', ['templates'])">
+            <button>
+              <svg class="w-6 h-6 stroke-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11M20 7L18 3H6L4 7M20 7H4M20 7V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
             </button>
           </div>
         
@@ -838,7 +844,6 @@
                                 <input
                                 style="display:none"
                                 type="file"
-                                accept="image/*,audio/*,application/*,text/*"
                                 @change="navigationMenuClose(); workbench.onLoadRecipeFromFileChange($event)"
                                 >
                                     <div class="flex items-center">
@@ -1303,6 +1308,6 @@
           </template>
         </ul>      </div>
     </div>
-
+
   </body>
 </html>
